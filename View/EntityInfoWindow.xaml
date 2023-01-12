@@ -1,0 +1,47 @@
+﻿<Window x:Class="WpfApp1.View.EntityInfoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.View"
+        mc:Ignorable="d"
+        Title="EntityInfoWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Content="Id" />
+        <TextBlock x:Name="txtCid" Grid.Row="1" Grid.Column="0"/>
+
+        <Label Content="Name" Grid.Row="2" Grid.Column="0" />
+        <TextBlock x:Name="txtCName" Grid.Row="3" Grid.Column="0"/>
+
+        <Label Content="Category" Grid.Row="4" Grid.Column="0" />
+        <TextBlock x:Name="txtCCategory" Grid.Row="5" Grid.Column="0"/>
+
+        <Label Content="Adres" Grid.Row="6" Grid.Column="0" />
+        <TextBlock x:Name="txtCAdres" Grid.Row="7" Grid.Column="0"/>
+
+        <Label Content="UserId" Grid.Column="1" />
+        <TextBlock x:Name="txtUid" Grid.Row="1" Grid.Column="1"/>
+
+        <Label Content="Imie i Nazwisko" Grid.Row="2" Grid.Column="1" />
+        <TextBlock x:Name="txtUName" Grid.Row="3" Grid.Column="1"/>
+
+        <Label Content="Adres" Grid.Row="4" Grid.Column="1" />
+        <TextBlock x:Name="txtUadres" Grid.Row="5" Grid.Column="1"/>
+    </Grid>
+</Window>
